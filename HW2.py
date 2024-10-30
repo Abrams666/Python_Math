@@ -23,5 +23,3 @@ for i in range(5):
         counter += 1
     else:
         break
-
-print(x)
