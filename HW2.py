@@ -23,3 +23,5 @@ for i in range(5):
         counter += 1
     else:
         break
+
+#Copyright © 2024 Abrams & 盧宥維. All rights reserved.
