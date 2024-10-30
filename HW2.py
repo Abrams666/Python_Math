@@ -13,12 +13,15 @@ x = 1
 counter = 1
 
 #find root
-while True:
-    print(f"{counter:2d} : x = {x:.6e} , f(x) = {abs(F(x)):.6e}")
-    ##print(str(x)+"hh"+str(F(x)))
+for i in range(5):
+    x=round(x,16)
+    print(f"{counter:2d} : x = {x:.6e} , f(x) = {(F(x)):.6e}")
 
     if (abs(F(x)) > 1e-15):
-        x = (((-(F(x))) + (f(x) * x)) / f(x))
+        x = x - F(x)/f(x)
+        #x = ((((F(x))) + (f(x) * x)) / f(x))
         counter += 1
     else:
         break
+
+print(x)
